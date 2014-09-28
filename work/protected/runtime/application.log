@@ -1,0 +1,228 @@
+2014/09/26 16:04:41 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.widget" is not defined.' in Z:\home\lesson1\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\work\protected\views\layouts\main.php(37): CComponent->__get('widget')
+#1 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require('Z:\home\lesson1...')
+#2 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\lesson1...', Array, true)
+#3 Z:\home\lesson1\www\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('Z:\home\lesson1...', Array, true)
+#4 Z:\home\lesson1\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 Z:\home\lesson1\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#7 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 Z:\home\lesson1\www\yii\framework\work\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#9 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require('Z:\home\lesson1...')
+#10 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\lesson1...', Array, true)
+#11 Z:\home\lesson1\www\yii\framework\web\CController.php(785): CBaseController->renderFile('Z:\home\lesson1...', Array, true)
+#12 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(32): CController->render('index')
+#13 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 Z:\home\lesson1\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 Z:\home\lesson1\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#18 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#19 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/index
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index-test.php?r=site/login
+---
+2014/09/26 16:26:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.запомнить меня" is not defined.' in Z:\home\lesson1\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\web\helpers\CHtml.php(2145): CComponent->__get('???????????????...')
+#1 Z:\home\lesson1\www\yii\framework\web\helpers\CHtml.php(1448): CHtml::resolveValue(Object(LoginForm), '???????????????...')
+#2 Z:\home\lesson1\www\yii\framework\web\widgets\CActiveForm.php(745): CHtml::activeCheckBox(Object(LoginForm), '???????????????...', Array)
+#3 Z:\home\lesson1\www\yii\framework\work\protected\views\site\login.php(40): CActiveForm->checkBox(Object(LoginForm), '???????????????...')
+#4 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require('Z:\home\lesson1...')
+#5 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\lesson1...', Array, true)
+#6 Z:\home\lesson1\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\lesson1...', Array, true)
+#7 Z:\home\lesson1\www\yii\framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#8 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(92): CController->render('login', Array)
+#9 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 Z:\home\lesson1\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 Z:\home\lesson1\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#14 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#15 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/login
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index-test.php?r=site/index
+---
+2014/09/26 17:43:19 [error] [php] Invalid argument supplied for foreach() (Z:\home\lesson1\www\yii\framework\base\CModel.php:282)
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\web\helpers\CHtml.php(1185): ContactForm->isAttributeRequired()
+#1 Z:\home\lesson1\www\yii\framework\web\widgets\CActiveForm.php(560): activeLabelEx()
+#2 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(37): CActiveForm->labelEx()
+#3 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require()
+#4 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#5 Z:\home\lesson1\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#6 Z:\home\lesson1\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#7 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(66): SiteController->render()
+#8 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#9 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 Z:\home\lesson1\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#11 Z:\home\lesson1\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#13 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/contact
+2014/09/26 17:44:36 [error] [php] Invalid argument supplied for foreach() (Z:\home\lesson1\www\yii\framework\base\CModel.php:282)
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\web\helpers\CHtml.php(1185): ContactForm->isAttributeRequired()
+#1 Z:\home\lesson1\www\yii\framework\web\widgets\CActiveForm.php(560): activeLabelEx()
+#2 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(37): CActiveForm->labelEx()
+#3 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require()
+#4 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#5 Z:\home\lesson1\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#6 Z:\home\lesson1\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#7 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(66): SiteController->render()
+#8 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#9 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 Z:\home\lesson1\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#11 Z:\home\lesson1\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#13 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/contact
+2014/09/26 18:46:01 [error] [php] Missing argument 1 for CActiveForm::textField(), called in Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php on line 51 and defined (Z:\home\lesson1\www\yii\framework\web\widgets\CActiveForm.php:653)
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 Z:\home\lesson1\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#2 Z:\home\lesson1\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#3 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(66): SiteController->render()
+#4 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#5 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 Z:\home\lesson1\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#7 Z:\home\lesson1\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#8 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#9 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/contact
+2014/09/26 19:05:17 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "labeltextAreaEx".' in Z:\home\lesson1\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(55): CComponent->__call('labeltextAreaEx', Array)
+#1 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(55): CActiveForm->labeltextAreaEx(Object(ContactForm), 'body')
+#2 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require('Z:\home\lesson1...')
+#3 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\lesson1...', Array, true)
+#4 Z:\home\lesson1\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\lesson1...', Array, true)
+#5 Z:\home\lesson1\www\yii\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#6 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#7 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#8 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 Z:\home\lesson1\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 Z:\home\lesson1\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('contact')
+#12 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#13 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/contact
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index-test.php?r=site/login
+---
+2014/09/26 19:08:15 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "labeltextAreaEx".' in Z:\home\lesson1\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(55): CComponent->__call('labeltextAreaEx', Array)
+#1 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(55): CActiveForm->labeltextAreaEx(Object(ContactForm), 'body')
+#2 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require('Z:\home\lesson1...')
+#3 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\lesson1...', Array, true)
+#4 Z:\home\lesson1\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\lesson1...', Array, true)
+#5 Z:\home\lesson1\www\yii\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#6 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#7 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#8 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 Z:\home\lesson1\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 Z:\home\lesson1\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('contact')
+#12 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#13 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/contact
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index-test.php?r=site/login
+---
+2014/09/26 19:09:29 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "labeltextAreaEx".' in Z:\home\lesson1\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(55): CComponent->__call('labeltextAreaEx', Array)
+#1 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(55): CActiveForm->labeltextAreaEx(Object(ContactForm), 'body')
+#2 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require('Z:\home\lesson1...')
+#3 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\lesson1...', Array, true)
+#4 Z:\home\lesson1\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\lesson1...', Array, true)
+#5 Z:\home\lesson1\www\yii\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#6 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#7 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#8 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 Z:\home\lesson1\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 Z:\home\lesson1\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('contact')
+#12 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#13 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/contact
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index-test.php?r=site/login
+---
+2014/09/26 19:09:51 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "labeltextAreaEx".' in Z:\home\lesson1\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(55): CComponent->__call('labeltextAreaEx', Array)
+#1 Z:\home\lesson1\www\yii\framework\work\protected\views\site\contact.php(55): CActiveForm->labeltextAreaEx(Object(ContactForm), 'body')
+#2 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(127): require('Z:\home\lesson1...')
+#3 Z:\home\lesson1\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\lesson1...', Array, true)
+#4 Z:\home\lesson1\www\yii\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\lesson1...', Array, true)
+#5 Z:\home\lesson1\www\yii\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#6 Z:\home\lesson1\www\yii\framework\work\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#7 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#8 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 Z:\home\lesson1\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 Z:\home\lesson1\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('contact')
+#12 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#13 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 Z:\home\lesson1\www\yii\framework\work\index-test.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/framework/work/index-test.php?r=site/contact
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index-test.php?r=site/login
+---
+2014/09/27 19:06:27 [error] [exception.CException] exception 'CException' with message 'Please configure the "password" property of the "gii" module.' in Z:\home\lesson1\www\yii\framework\gii\components\UserIdentity.php:13
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\gii\models\LoginForm.php(26): UserIdentity->authenticate()
+#1 Z:\home\lesson1\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 Z:\home\lesson1\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 Z:\home\lesson1\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 Z:\home\lesson1\www\yii\framework\gii\controllers\DefaultController.php(43): CModel->validate()
+#5 Z:\home\lesson1\www\yii\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#6 Z:\home\lesson1\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 Z:\home\lesson1\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 Z:\home\lesson1\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#10 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/default/log...')
+#11 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 Z:\home\lesson1\www\yii\framework\work\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/framework/work/index.php?r=gii/default/login
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index.php?r=gii/default/login
+---
+2014/09/27 20:42:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in Z:\home\lesson1\www\yii\framework\gii\GiiModule.php:165
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\web\CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/default/log...')
+#3 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 Z:\home\lesson1\www\yii\framework\work\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/framework/work/index.php?r=gii/default/login
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index.php?r=gii/default/login
+---
+2014/09/27 20:45:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in Z:\home\lesson1\www\yii\framework\gii\GiiModule.php:165
+Stack trace:
+#0 Z:\home\lesson1\www\yii\framework\web\CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 Z:\home\lesson1\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/default/log...')
+#3 Z:\home\lesson1\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 Z:\home\lesson1\www\yii\framework\work\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/framework/work/index.php?r=gii/default/login
+HTTP_REFERER=http://localhost:63342/yii/framework/work/index.php?r=gii/default/login
+---
