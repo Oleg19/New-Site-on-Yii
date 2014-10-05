@@ -5,6 +5,7 @@
 $this->breadcrumbs=array(
 	'People'=>array('index'),
 	$model->id,
+   //$model->person->title,
 );
 
 $this->menu=array(
@@ -24,5 +25,7 @@ $this->menu=array(
 		'id',
 		'FistName',
 		'LastName',
-	),
-)); ?>
+       //'NameCity',
+    ),
+));
+?>

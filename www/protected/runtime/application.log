@@ -164,3 +164,422 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/index.php?r=city&r=2
 ---
+2014/10/03 19:48:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "findByPk".' in Z:\home\yii\YiiRoot\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CController.php(270): CController->missingAction('findByPk')
+#1 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('findByPk')
+#2 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/findByPk')
+#3 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\yii\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=city/findByPk
+---
+2014/10/03 20:15:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "citн".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('cit??')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=cit%D0%BD
+---
+2014/10/03 20:35:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=city/tbl
+---
+2014/10/03 20:43:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=city/tbl
+---
+2014/10/03 20:49:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=city/tbl
+---
+2014/10/03 20:49:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=city/tbl
+---
+2014/10/03 20:50:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=city/tbl
+---
+2014/10/03 20:57:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=city/tbl
+---
+2014/10/03 21:26:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=city/tbl
+---
+2014/10/03 21:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "=city/tbl".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('=city/tbl')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/=city/tbl
+---
+2014/10/03 21:57:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "=city/tbl".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('=city/tbl')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/=city/tbl
+---
+2014/10/03 22:00:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/city/tbl
+HTTP_REFERER=http://yii/index.php/site/login
+---
+2014/10/03 22:03:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/city/tbl
+HTTP_REFERER=http://yii/index.php/site/login
+---
+2014/10/04 16:33:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index/tbl".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('index/tbl')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index/tbl
+---
+2014/10/04 16:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/04 16:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tbl".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('tbl')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/tbl
+---
+2014/10/04 16:35:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/city/tbl
+HTTP_REFERER=http://yii/index.php/site/login
+---
+2014/10/04 16:35:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('Tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/Tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/city/Tbl
+---
+2014/10/04 16:35:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('Tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/Tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/city/Tbl
+---
+2014/10/04 17:14:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('Tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/Tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/city/Tbl
+---
+2014/10/04 17:14:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tbl".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('tbl')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/tbl
+---
+2014/10/04 17:15:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/city/tbl
+---
+2014/10/04 17:21:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\yii\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\yii\YiiRoot\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\yii\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\yii\YiiRoot\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\yii\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('tbl')
+#8 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('city/tbl')
+#9 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/city/tbl
+---
+2014/10/04 21:04:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/04 21:04:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/05 21:45:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/05 21:55:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "personcity".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('personcity')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/personcity
+---
+2014/10/05 22:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/PersonCity/index".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('views/PersonCit...')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/views/PersonCity/index
+---
+2014/10/05 22:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/PersonCity/index".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('views/PersonCit...')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/views/PersonCity/index
+---
+2014/10/05 22:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/PersonCity/index.php".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('views/PersonCit...')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/views/PersonCity/index.php
+---
+2014/10/05 22:08:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in Z:\home\yii\YiiRoot\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('PersonCity/inde...')
+#3 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\yii\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/PersonCity/index.php
+---
+2014/10/05 22:09:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in Z:\home\yii\YiiRoot\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('personCity/inde...')
+#3 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\yii\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/personCity/index.php
+---
+2014/10/05 22:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "personсity/index.php".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('person??ity/ind...')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/person%D1%81ity/index.php
+---
+2014/10/05 22:09:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "personсity/index.php".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('person??ity/ind...')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/person%D1%81ity/index.php
+---
+2014/10/05 22:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "personсity/index.php".' in Z:\home\yii\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('person??ity/ind...')
+#1 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/person%D1%81ity/index.php
+---
+2014/10/05 22:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in Z:\home\yii\YiiRoot\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\yii\YiiRoot\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 Z:\home\yii\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('personCity/inde...')
+#3 Z:\home\yii\YiiRoot\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\yii\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/personCity/index.php
+---

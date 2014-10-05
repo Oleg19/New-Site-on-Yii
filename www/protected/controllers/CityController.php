@@ -42,6 +42,10 @@ class CityController extends Controller
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
+           /* array('allow', // allow admin user to perform 'admin' and 'delete' actions
+                'actions'=>array('tbl'),
+                'users'=>array('*'),
+            ),*/
 		);
 	}
 
@@ -126,6 +130,7 @@ class CityController extends Controller
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
+
 	}
 
 	/**
@@ -171,15 +176,16 @@ class CityController extends Controller
 		}
 	}
     /*
-    public function relationTbl()
+    public function actionTbl()
     {
+        $model=new City;
         // получаем запись с ID=10
-        $city=City::model()->findByPk(10);
+        $model=City::model()->findByPk(3);
         // Получаем автора записи. Здесь будет выполнен реляционный запрос.
         //var_dump($post); die;
-        $city=$city->city;
+        echo $city=$model->city;
 
     }
-    */
 
+    */
 }

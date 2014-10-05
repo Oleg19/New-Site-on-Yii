@@ -171,7 +171,7 @@ class PersonController extends Controller
 		}
 	}
 
-    public function relationTbl()
+   /* public function relationTbl()
     {
         // получаем запись с ID=10
         $post=Person::model()->findByPk(10);
@@ -180,5 +180,6 @@ class PersonController extends Controller
         $author=$post->author;
 
     }
+   */
 
 }
